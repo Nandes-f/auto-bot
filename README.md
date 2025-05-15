@@ -1,6 +1,6 @@
-# XAMPP Automation Tool
+# Screen Automation Tool
 
-A Python-based automation tool that helps manage XAMPP sessions with customizable settings and system tray integration.
+A Python-based automation tool that helps manage Screen sessions with customizable settings and system tray integration.
 
 ## Features
 
