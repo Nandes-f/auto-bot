@@ -16,7 +16,7 @@ class SettingsDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setWindowTitle("Settings")
-        self.setWindowIcon(QIcon("xampp.png"))
+        self.setWindowIcon(QIcon("icon.png"))
         self.setFixedSize(400, 150)
         
         layout = QFormLayout()
@@ -74,7 +74,7 @@ class XamppBot(QWidget):
 
     def setup_ui(self):
         self.setWindowTitle("Xampp")
-        self.setWindowIcon(QIcon("xampp.png"))
+        self.setWindowIcon(QIcon("icon.png"))
         self.setFixedSize(300, 200)
         
         layout = QVBoxLayout()
@@ -107,7 +107,7 @@ class XamppBot(QWidget):
 
     def setup_tray_icon(self):
         self.tray_icon = QSystemTrayIcon(self)
-        icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "xampp.png")
+        icon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icon.png")
         if os.path.exists(icon_path):
             self.tray_icon.setIcon(QIcon(icon_path))
         else:
